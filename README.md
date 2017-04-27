@@ -9,6 +9,17 @@ Console  application to compare two KeePass Database files. Supports both KeePas
  - Detects when names, passwords, and other properties are changed.
  - Can compare by UUID (more reliable) or path (more flexible).
 
+## Security Notes
+
+It is important to remember that this program makes no attempt to protect in-memory contents. Do not use this program on an untrusted system or if you worry a forensic examination is possible.
+
+For best security, do not use the password console flags docuemnted below. Instead provide the password when prompted. This prevents two critical vulnerabilities:
+
+ - the password is not stored within your console history and other logs
+ - the password is not visible on the screen at any point
+
+The -p flags are intended for testing and batch file processing.
+
 ## Installation
 
 It's recommended to build this using a virtual environment. The instructions for this are typically specific to your platform and desired python version, so I would recommend checking with Google on how to accomplish this.
