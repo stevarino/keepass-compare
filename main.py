@@ -53,7 +53,7 @@ def scan_kdb(file, password, compare):
     items = {}
 
 
-    with libkeepass.open(file, password) as kdb:
+    with libkeepass.open(file, password=password) as kdb:
         for item in itertools.chain(kdb.obj_root.findall('.//Group'),
                                     kdb.obj_root.findall('.//Group/Entry')):
             parent = item.getroottree().getpath(item.getparent())
