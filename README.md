@@ -1,6 +1,6 @@
 # KeePass Compare
 
-Console  application to compare two Keepass Database files. Supports both KeePassX and KeePass2 files (v3 and v4).
+Console  application to compare two KeePass Database files. Supports both KeePassX and KeePass2 files (v3 and v4). Runs under both Python 2 and 3.
 
 ## Features
 
@@ -11,9 +11,9 @@ Console  application to compare two Keepass Database files. Supports both KeePas
 
 ## Installation
 
-It's recommended to build this using a virtual environment. The insructions for this are typically specific to your platform and desired python version, so I would recommend checking with Google on how to accomplish this.
+It's recommended to build this using a virtual environment. The instructions for this are typically specific to your platform and desired python version, so I would recommend checking with Google on how to accomplish this.
 
-Once a virtual environment is created and activated, prerequesites can be installed as follows:
+Once a virtual environment is created and activated, prerequisites can be installed as follows:
 
 ```bash
 pip install -r requirements.txt
